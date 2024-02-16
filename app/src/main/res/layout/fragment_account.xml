@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".toolbar.fragment_account">
+
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/predict" />
+
+    <!-- Account Section -->
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="253dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/photoImageView"
+        android:text="Hello, mikooosia005@gmail.comv wr31rsdff!"
+        android:textAlignment="center"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/accountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="106dp"
+        android:text="Аккаунт"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:id="@+id/personalDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountTextView"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/accountImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/accountImageView"
+            android:text="Личные данные"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <!-- App Section -->
+    <TextView
+        android:id="@+id/accountTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personalDataLayout"
+        android:layout_marginTop="24dp"
+        android:text="App"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:id="@+id/personalDataLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountTextView1"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/accountImageView1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/accountImageView1"
+            android:text="About app"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <!-- Other Section -->
+    <TextView
+        android:id="@+id/accountTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personalDataLayout1"
+        android:layout_marginTop="24dp"
+        android:text="Other"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!-- Language Section -->
+    <RelativeLayout
+        android:id="@+id/languageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountTextView2"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/languageImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+        <TextView
+            android:id="@+id/languageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/languageImageView"
+            android:text="Language"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <!-- Settings Section -->
+    <RelativeLayout
+        android:id="@+id/settingsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/languageLayout"
+        android:layout_marginTop="1dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/settingsImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_menu_manage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/settingsImageView"
+            android:text="Settings"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <!-- Logout Section -->
+    <RelativeLayout
+        android:id="@+id/personalDataLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsLayout"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/accountImageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/accountImageView2"
+            android:text="Log Out"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <!-- Delete Account Section -->
+    <RelativeLayout
+        android:id="@+id/personalDataLayout123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personalDataLayout12"
+        android:layout_marginTop="1dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/accountImageView23"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/accountImageView23"
+            android:text="Delete Account"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>

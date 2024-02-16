@@ -1,0 +1,40 @@
+<!-- Layout for a single note item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView for the note's image (if applicable) -->
+    <ImageView
+        android:id="@+id/note_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/> <!-- Set visibility to 'visible' in the adapter if there is an image -->
+
+    <!-- TextView for the note's title -->
+    <TextView
+        android:id="@+id/note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TextView for the note's content -->
+    <TextView
+        android:id="@+id/note_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- TextView for the note's timestamp -->
+    <TextView
+        android:id="@+id/note_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>
